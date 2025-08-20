@@ -1,13 +1,19 @@
 Creador :Leandro Moya Rodríguez
 
 Dependencias utilizadas
+
    npm install axios
+   
    npm install react-hook-form
+   
    API https://restcountries.com/
 
 La aplicación solo tiene 3 usuarios con los que se puede ingresar
+
    nombre :ana, contraseña :132
+   
    nombre :pepe, contraseña :123
+   
    nombre :juan, contraseña :321
 
 Desripción general de la aplicación :Esta aplicación se creo con el propósito de que las personal puedan aprender acerca de los nombres de los países que hay en todo el mundo de una forma divertida por medio de un juego que los reta a memorizar los nombre de los países, en la página de inicio podrá aprender los nombres de los países y visualizar las banderas antes de empezar a jugar.
@@ -16,9 +22,13 @@ Tambien puede filtrar los países por nombre para realizar una busqueda, en la p
 Además cuenta con un formulario de inicio que valida si las credenciales de ingreso son validas.
 
 Prerrequisitos.
+
    1.Tener un dispositivo android.
+   
    2.Tener una conección a internet.
+   
    3.Otorgar los permisos para la instalación del APK.
+   
    4.Tener más de 80 MB disponibles.
    
 
