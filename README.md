@@ -34,7 +34,7 @@ Prerrequisitos.
 
 Ingresar a la aplicación
    escanear en código QR
-![image alt](https://github.com/LeandroMoya/Proyecto_Movile/blob/main/QR%20aplicaci%C3%B3n%20pa%C3%ADses.png?raw=true)
+![image alt](https://github.com/LeandroMoya/Proyecto_Movile/blob/main/Nuevo%20QR%20aplicaci%C3%B3n%20pa%C3%ADses.jpg?raw=true)
 
 Ingresar las credencialas :Se tiene que ingresar el nombre y contraseña del usuario, y despues, precionar el botón de ingresar. Si son validos se mostrara la página de inicio, de lo contrario el sistema indicara que el usuario y/o contraseña son incorrectos.
 ![image alt](https://github.com/LeandroMoya/Proyecto_Movile/blob/main/FormularioInicio.jpg?raw=true)
