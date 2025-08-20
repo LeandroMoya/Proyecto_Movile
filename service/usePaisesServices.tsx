@@ -15,7 +15,7 @@ export default function usePaisesServices() {
             //Retorna los países
             return data
         } catch (error) {
-            return []
+            throw error
         }
     }
 
