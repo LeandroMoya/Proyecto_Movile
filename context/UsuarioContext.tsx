@@ -39,9 +39,7 @@ export function UsuarioProvider({children}:PropsWithChildren) {
     const [listaPaises,setListaPaises] =useState<Paises[]>([])
 
     function salir():void {
-        //Valida que exista un usuario en el sistema
-        if(usuario.nombre!=="" && usuario.contrasenia !== "")
-            router.push("/")//Redirigue al usuario al formulario
+        router.push("/")//Redirigue al usuario al formulario
         //Limpia el arreglo de países
         setListaPaises([])
         //Evita que se vea el mensaje
@@ -59,19 +57,28 @@ export function UsuarioProvider({children}:PropsWithChildren) {
             )
             //Valida que el usuario exista
             if(usuario){
-                //Obtiene todos los países
-                const resultado:Paises[] = await obtenerPaises()
-                //Valida que la lista no sea nula
-                if(resultado )
-                    setListaPaises(resultado)
-                
-                return true
+                try {
+                    //Obtiene todos los países
+                    const resultado:Paises[] = await obtenerPaises()
+                    //Valida que la lista no sea nula
+                    if(resultado){
+                        setListaPaises(resultado)
+                        return true
+                    }else{
+                        setMensaje("La aplicación no tiene acceso a los datos de los países en este momento")
+                        return false
+                    }    
+                } catch (error) {
+                    setMensaje("A ocurrido un error interno de la aplicación")
+                    return false
+                } 
             } 
             setMensaje("El usuario y/o la contraseña son incorrectas")
             return false
         }
+        setMensaje("Tiene que ingresar todos los datos")
         return false
-    } 
+    }  
 
     return(
         <UsuarioContext.Provider 
